@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ensemblize</title>
+    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Ensemblize" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ensemblize helps ensembles create and organize rehearsal materials for stronger practice and performance." />
+    <link rel="manifest" href="assets/favicons/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+      :root { --teal-700:#026980; --teal-900:#01323d; }
+      * { font-family: 'Roboto'; }
+      h1,h2,h3,h4,h5,h6 { font-family: 'Montserrat'; text-align:center; }
+
+      #hero { position:relative; min-height:100svh; overflow:hidden; }
+      #hero video { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+
+      #overlay {
+        position:absolute; inset:0; color:#fff;
+        background: linear-gradient(180deg, rgba(2,105,128,.9) 10%, rgba(1,50,61,.9) 90%);
+      }
+      #overlay-outer {
+        display:flex; align-items:center; justify-content:center;
+        min-height:100%;
+      }
+      #overlay-inner { width:800px; max-width:80vw; }
+      .lede { padding:0 60px 50px; text-align:left; line-height:1.6; text-align: justify; }
+
+      /* Optional CTA style
+      .cta { display:inline-block; background:#fff; color:var(--teal-900);
+            padding:.9rem 1.2rem; border-radius:12px; font-weight:700; text-decoration:none; } */
+
+      @media (prefers-reduced-motion: reduce) {
+        #hero video { display:none; }
+        #overlay { background: linear-gradient(180deg, var(--teal-700), var(--teal-900)); }
+      }
+    </style>
+  </head>
+  <body style="margin:0;padding:0;">
+    <div id="hero">
+      <video autoplay loop muted playsinline preload="none" aria-hidden="true">
+        <source src="assets/videos/landing-page-bg-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <div id="overlay">
+        <div id="overlay-outer">
+          <div id="overlay-inner">
+            <img src="assets/images/logo-trim-white.svg" style="width:100%" alt="Ensemblize" />
+            <h1>Create. Rehearse. Perform. Together.</h1>
+            <p class="lede">
+              Ensemblize brings musicians, directors, and performers together in one seamless space.
+              From sharing set lists and rehearsal notes to keeping everyone in sync with updates,
+              it's built to remove the clutter so your ensemble can focus on the music. Whether you're
+              leading a choir, band, or cast, Ensemblize makes preparation feel effortless—so when it's
+              time to perform, you're already in harmony.
+            </p>
+            <div class="lede">
+              <div class="klaviyo-form-Tz66tA"></div>
+            </div>
+            <!-- CTA placeholder -->
+            <!-- <a class="cta" href="mailto:hello@ensemblize.com?subject=Ensemblize%20Beta">Join the beta</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <script async type='text/javascript' src='https://static.klaviyo.com/onsite/js/VsBJnm/klaviyo.js?company_id=VsBJnm'></script>
+    <script type="text/javascript"> 
+    //Initialize Klaviyo object on page load
+    !function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}(); </script>
+  </body>
+</html>
